@@ -29,23 +29,23 @@ cb6245ba-c7e8-4fd5-bc21-be2b87b74067
 ```
 
 
-Cold migrate the instances in the `instance-list.txt` file to a specific host(in this case to stgpub02hvza10.neo.id) simultaneously with a maximum of 4 jobs:
+Cold-migrate the instances in the `instance-list.txt` file to a specific host(in this case to stgpub02hvza19.neo.id) simultaneously with a maximum of 4 jobs:
 ```
-./cold-migrate.sh -i instance-list.txt  -n 4 -d stgpub02hvza10.neo.id
+./cold-migrate.sh -i instance-list.txt  -n 4 -d stgpub02hvza19.neo.id
 ```
 
-After the script is finished, there will be 2 output files, namely:
+After the script has finished running, there will be 2 output files, namely:
 - summary file, which contains the status of the instance after being cold-migrated 
 ```
 # Example summary_2023-11-09_16:50:35.csv
 
 id,before,after,instance_status,cold-migrate_status
-92a149dc-a072-4fd3-acd7-2a6c34708e02,tepub02hvza10.neo.id,tepub02hvza19.neo.id,ACTIVE,done
-7ddc7e4e-c543-40c1-9aea-ac9dc7b0d41d,tepub02hvza10.neo.id,tepub02hvza19.neo.id,ACTIVE,done
-8bb930c6-b569-4764-a137-06c440329f21,tepub02hvza10.neo.id,tepub02hvza19.neo.id,ACTIVE,done
-6c67737a-180a-4a4d-a35b-70fb366b7acb,tepub02hvza10.neo.id,tepub02hvza19.neo.id,ACTIVE,done
-776a89e1-5cfa-4050-9f05-d82ecd282352,tepub02hvza10.neo.id,tepub02hvza19.neo.id,ACTIVE,done
-cb6245ba-c7e8-4fd5-bc21-be2b87b74067,tepub02hvza10.neo.id,tepub02hvza19.neo.id,ACTIVE,done
+92a149dc-a072-4fd3-acd7-2a6c34708e02,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id,ACTIVE,done
+7ddc7e4e-c543-40c1-9aea-ac9dc7b0d41d,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id,ACTIVE,done
+8bb930c6-b569-4764-a137-06c440329f21,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id,ACTIVE,done
+6c67737a-180a-4a4d-a35b-70fb366b7acb,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id,ACTIVE,done
+776a89e1-5cfa-4050-9f05-d82ecd282352,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id,ACTIVE,done
+cb6245ba-c7e8-4fd5-bc21-be2b87b74067,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id,ACTIVE,done
 ```
 - log file, which contains the logs during the cold-migration process
 ```
