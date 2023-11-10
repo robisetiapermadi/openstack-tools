@@ -96,3 +96,8 @@ cb6245ba-c7e8-4fd5-bc21-be2b87b74067,stgpub02hvza10.neo.id,stgpub02hvza19.neo.id
 2023-11-09T16:51:51+07: full_lifecycle_cold_migration instance cb6245ba-c7e8-4fd5-bc21-be2b87b74067 Finish
 2023-11-09T16:51:51+07: full_lifecycle_cold_migration instance 776a89e1-5cfa-4050-9f05-d82ecd282352 Finish
 ```
+### Screenshot
+![alt text](https://github.com/robisetiapermadi/openstack-tools/blob/master/parallel-cold-migrate/sample-output.png?raw=true)
+##### Log and summary
+![alt text](https://github.com/robisetiapermadi/openstack-tools/blob/master/parallel-cold-migrate/sample-output-2.png?raw=true)
+
